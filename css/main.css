@@ -45,9 +45,9 @@ a {
 .emphasize {
   padding-top: 20px; }
 
-.table-cell {
-  display: table-cell;
-  vertical-align: baseline; }
+@media screen and (max-width: 767px) {
+  .equal-height {
+    height: auto !important; } }
 
 .social {
   font-size: 25px;
@@ -60,8 +60,9 @@ a {
     .social a:hover {
       color: #4d4d4d; }
 
-.container {
-  width: 1000px; }
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px; } }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -74,6 +75,13 @@ footer {
   font-weight: 300;
   padding-bottom: 100px;
   padding-top: 30px; }
+  @media screen and (max-width: 992px) {
+    footer {
+      padding-bottom: 40px; } }
+  @media screen and (max-width: 767px) {
+    footer {
+      font-size: 12px;
+      text-align: center; } }
 
 .text-offscreen {
   text-indent: 100%;
@@ -85,6 +93,12 @@ footer {
   background-size: contain;
   height: 140px;
   width: 332px; }
+  @media screen and (max-width: 767px) {
+    .brand {
+      width: 250px;
+      margin-bottom: 0;
+      margin-top: -20px;
+      height: 80px; } }
 
 .description {
   font-size: 20px;
@@ -97,15 +111,33 @@ footer {
   background-color: #bbc8e2;
   height: 100%;
   padding: 40px 0; }
+  @media screen and (max-width: 767px) {
+    .description-container {
+      padding-top: 0; } }
+
+@media screen and (max-width: 767px) {
+  .description-top {
+    margin-top: 0; } }
 
 .header {
   background-color: #fff;
   margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 0; }
+  padding: 0; }
+
+@media screen and (max-width: 992px) {
+  .jumbotron p {
+    font-size: 18px; } }
 
 .header-top {
   padding-bottom: 10px; }
+  @media screen and (max-width: 767px) {
+    .header-top {
+      padding-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .sidekick-app-container {
+    background-color: #bbc8e2;
+    margin-bottom: 0; } }
 
 .sidekick-app {
   display: block;
@@ -115,6 +147,7 @@ footer {
   width: 300px; }
   @media screen and (max-width: 767px) {
     .sidekick-app {
+      margin: 0 auto;
       position: static; } }
 
 .app-platforms {
@@ -137,6 +170,9 @@ footer {
   .app-platforms span {
     font-size: 30px;
     padding: 0 5px; }
+  @media screen and (max-width: 767px) {
+    .app-platforms {
+      display: none; } }
 
 section {
   padding-bottom: 60px;
@@ -149,7 +185,15 @@ section {
 
 /* FIRST SECTION ------------------------------------------------------- */
 .pin-icon {
+  max-width: 100%;
   width: 300px; }
+  @media screen and (max-width: 767px) {
+    .pin-icon {
+      display: none; } }
+
+@media screen and (max-width: 767px) {
+  .partner {
+    text-align: center; } }
 
 .feature {
   padding: 0 25px; }
@@ -158,15 +202,34 @@ section {
   background-color: #fff;
   height: 275px;
   margin-bottom: 30px;
+  max-width: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 992px) {
+    .img-circle {
+      height: 200px; } }
+  @media screen and (max-width: 767px) {
+    .img-circle {
+      margin: 0 auto; } }
 
 h4 {
   font-weight: 600; }
+
+@media screen and (max-width: 992px) {
+  .feature-text {
+    text-align: center; } }
+@media screen and (max-width: 767px) {
+  .feature-text {
+    margin: 30px auto 60px;
+    width: 80%; } }
 
 .about-street-sidekick {
   background-color: #efefef; }
   .about-street-sidekick h2 {
     font-size: 34px; }
+  @media screen and (max-width: 767px) {
+    .about-street-sidekick {
+      padding-bottom: 0;
+      text-align: center; } }
 
 .feature-screenshot {
   max-width: 100%;

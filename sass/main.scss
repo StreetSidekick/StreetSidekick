@@ -5,7 +5,8 @@
 
 @import "fonts";
 
-$bp-md: 767px;
+$bp-sm: 767px;
+$bp-md: 992px;
 
 $slate-blue: desaturate(lighten(#84adff, 5%), 60%);
 $logo-color: desaturate(#ff3333, 10%);
@@ -30,9 +31,10 @@ a {
 	padding-top: 20px;
 }
 
-.table-cell {
-	display: table-cell;
-	vertical-align: baseline;
+.equal-height {
+	@media screen and (max-width: $bp-sm) {
+		height: auto !important; // override JS
+	}
 }
 
 .social {
@@ -52,7 +54,9 @@ a {
 }
 
 .container {
-	width: 1000px;
+	@media screen and (min-width: 1000px) {
+		width: 1000px;
+	}
 }
 
 body {
@@ -67,6 +71,16 @@ footer {
 	font-weight: 300;
 	padding-bottom: 100px;
 	padding-top: 30px;
+
+
+	@media screen and (max-width: $bp-md) {
+		padding-bottom: 40px;
+	}
+
+	@media screen and (max-width: $bp-sm) {
+		font-size: 12px;
+		text-align: center;
+	}
 }
 
 .text-offscreen {
@@ -80,6 +94,13 @@ footer {
 	background-size: contain;
 	height: 140px;
 	width: 332px;
+
+	@media screen and (max-width: $bp-sm) {
+		width: 250px;
+		margin-bottom: 0;
+		margin-top: -20px;
+		height: 80px;
+	}
 }
 
 .description {
@@ -96,17 +117,43 @@ footer {
 	background-color: $slate-blue;
 	height: 100%;
 	padding: 40px 0;
+
+	@media screen and (max-width: $bp-sm) {
+		padding-top: 0;
+	}
+}
+
+.description-top {
+	@media screen and (max-width: $bp-sm) {
+		margin-top: 0;
+	}
 }
 
 .header {
 	background-color: #fff;
 	margin-bottom: 0;
-	padding-bottom: 0;
-	padding-top: 0;
+	padding: 0;
+}
+
+.jumbotron p {
+	@media screen and (max-width: $bp-md) {
+		font-size: 18px;
+	}
 }
 
 .header-top {
 	padding-bottom: 10px;
+
+	@media screen and (max-width: $bp-sm) {
+		padding-bottom: 0;
+	}
+}
+
+.sidekick-app-container {
+	@media screen and (max-width: $bp-sm) {
+		background-color: $slate-blue;
+		margin-bottom: 0;
+	}
 }
 
 .sidekick-app {
@@ -116,7 +163,8 @@ footer {
 	position: absolute;
 	width: 300px;
 
-	@media screen and (max-width: $bp-md) {
+	@media screen and (max-width: $bp-sm) {
+		margin: 0 auto;
 		position: static;
 	}
 }
@@ -145,6 +193,10 @@ footer {
 		font-size: 30px;
 		padding: 0 5px;
 	}
+
+	@media screen and (max-width: $bp-sm) {
+		display: none;
+	}
 }
 
 section {
@@ -162,7 +214,18 @@ section {
 /* FIRST SECTION ------------------------------------------------------- */
 
 .pin-icon {
+	max-width: 100%;
 	width: 300px;
+
+	@media screen and (max-width: $bp-sm) {
+		display: none;
+	}
+}
+
+.partner {
+	@media screen and (max-width: $bp-sm) {
+		text-align: center;
+	}
 }
 
 .feature {
@@ -173,11 +236,31 @@ section {
 	background-color: #fff;
 	height: 275px;
 	margin-bottom: 30px;
+	max-width: 100%;
 	overflow: hidden;
+
+	@media screen and (max-width: $bp-md) {
+		height: 200px;
+	}
+
+	@media screen and (max-width: $bp-sm) {
+		margin: 0 auto;
+	}
 }
 
 h4 {
 	font-weight: 600;
+}
+
+.feature-text {
+	@media screen and (max-width: $bp-md) {
+		text-align: center;
+	}
+
+	@media screen and (max-width: $bp-sm) {
+		margin: 30px auto 60px;
+		width: 80%;
+	}
 }
 
 .about-street-sidekick {
@@ -186,6 +269,11 @@ h4 {
 	}
 
 	background-color: #efefef;
+
+	@media screen and (max-width: $bp-sm) {
+		padding-bottom: 0;
+		text-align: center;
+	}
 }
 
 .feature-screenshot {
