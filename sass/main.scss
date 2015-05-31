@@ -1,0 +1,84 @@
+/*
+ *   Street Sidekick styles
+ * ---------------------------------------------------- //
+*/
+
+$bp-md: 767px;
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.text-offscreen {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.brand {
+	background: url("../images/ss_logo.png") no-repeat;
+	background-size: contain;
+	height: 140px;
+	width: 332px;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8em;
+	margin-left: 66px;
+
+	strong {
+		display: block;
+		font-weight: 600;
+		padding-top: 20px;
+	}
+}
+
+.description-container {
+	background-color: desaturate(lighten(#84adff, 5%), 60%);
+	padding: 60px 0 120px;
+}
+
+.header {
+	background-color: #fff;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.header-top {
+	padding-bottom: 30px;
+}
+
+.sidekick-app {
+	position: absolute;
+	width: 300px;
+
+	@media screen and (max-width: $bp-md) {
+		position: static;
+	}
+}
+
+section {
+	padding-bottom: 60px;
+	padding-top: 60px;
+
+	h2 {
+		font-weight: 300;
+		margin-bottom: 30px;
+		margin-top: 0;
+		text-transform: lowercase;
+	}
+}
+
+/* FIRST SECTION ------------------------------------------------------- */
+
+.problem-section {
+	background-color: #fff;
+}
