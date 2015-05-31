@@ -2,6 +2,11 @@
  *   Street Sidekick styles
  * ---------------------------------------------------- //
 */
+.highlight {
+  background-color: #fff;
+  color: #f53d3d;
+  padding: 5px; }
+
 .container {
   width: 1000px; }
 
@@ -33,13 +38,7 @@ footer {
   font-weight: 300;
   line-height: 1.8em; }
   .description strong {
-    display: block;
-    font-weight: 600;
-    padding-top: 20px; }
-
-.description-top strong {
-  display: inline;
-  padding: 0; }
+    font-weight: 600; }
 
 .description-container {
   background-color: #bbc8e2;
@@ -93,6 +92,7 @@ h4 {
     font-size: 34px; }
 
 .feature-screenshot {
+  max-width: 100%;
   position: relative;
   top: -130px;
   width: 300px; }

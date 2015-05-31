@@ -4,8 +4,17 @@
 */
 
 $bp-md: 767px;
+
 $slate-blue: desaturate(lighten(#84adff, 5%), 60%);
+$logo-color: desaturate(#ff3333, 10%);
+
 $font-size-heading: 34px;
+
+.highlight {
+	background-color: #fff;
+	color: $logo-color;
+	padding: 5px;
+}
 
 .container {
 	width: 1000px;
@@ -44,15 +53,8 @@ footer {
 	line-height: 1.8em;
 
 	strong {
-		display: block;
 		font-weight: 600;
-		padding-top: 20px;
 	}
-}
-
-.description-top strong {
-	display: inline;
-	padding: 0;
 }
 
 .description-container {
@@ -123,6 +125,7 @@ h4 {
 }
 
 .feature-screenshot {
+	max-width: 100%;
 	position: relative;
 	top: -130px;
 	width: 300px;
