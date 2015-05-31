@@ -3,6 +3,8 @@
  * ---------------------------------------------------- //
 */
 
+@import "fonts";
+
 $bp-md: 767px;
 
 $slate-blue: desaturate(lighten(#84adff, 5%), 60%);
@@ -14,6 +16,22 @@ $font-size-heading: 34px;
 	background-color: #fff;
 	color: $logo-color;
 	padding: 5px;
+}
+
+.social {
+	font-size: 25px;
+	margin-bottom: -15px;
+	padding-top: 15px;
+	text-align: right;
+
+	a {
+		color: #333;
+		text-decoration: none;
+
+		&:hover {
+			color: lighten(#333, 10%);
+		}
+	}
 }
 
 .container {
@@ -66,6 +84,7 @@ footer {
 	background-color: #fff;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	padding-top: 0;
 }
 
 .header-top {
