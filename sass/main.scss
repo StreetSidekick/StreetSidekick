@@ -4,6 +4,12 @@
 */
 
 $bp-md: 767px;
+$slate-blue: desaturate(lighten(#84adff, 5%), 60%);
+$font-size-heading: 34px;
+
+.container {
+	width: 1000px;
+}
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -11,8 +17,12 @@ body {
 	letter-spacing: 0.1px;
 }
 
-.container {
-	max-width: 1200px;
+footer {
+	background-color: #333;
+	color: #fff;
+	font-weight: 300;
+	padding-bottom: 100px;
+	padding-top: 30px;
 }
 
 .text-offscreen {
@@ -32,7 +42,6 @@ body {
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.8em;
-	margin-left: 66px;
 
 	strong {
 		display: block;
@@ -41,9 +50,14 @@ body {
 	}
 }
 
+.description-top strong {
+	display: inline;
+	padding: 0;
+}
+
 .description-container {
-	background-color: desaturate(lighten(#84adff, 5%), 60%);
-	padding: 60px 0 120px;
+	background-color: $slate-blue;
+	padding: 40px 0 60px;
 }
 
 .header {
@@ -53,10 +67,12 @@ body {
 }
 
 .header-top {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 .sidekick-app {
+	left: 50%;
+	margin-left: -150px;
 	position: absolute;
 	width: 300px;
 
@@ -79,6 +95,14 @@ section {
 
 /* FIRST SECTION ------------------------------------------------------- */
 
-.problem-section {
-	background-color: #fff;
+.pin-icon {
+	width: 300px;
+}
+
+.about-street-sidekick {
+	h2 {
+		font-size: $font-size-heading;
+	}
+
+	background-color: #efefef;
 }
