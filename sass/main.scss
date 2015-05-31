@@ -18,6 +18,11 @@ $font-size-heading: 34px;
 	padding: 5px;
 }
 
+.table-cell {
+	display: table-cell;
+	vertical-align: baseline;
+}
+
 .social {
 	font-size: 25px;
 	margin-bottom: -15px;
@@ -77,7 +82,8 @@ footer {
 
 .description-container {
 	background-color: $slate-blue;
-	padding: 40px 0 60px;
+	height: 100%;
+	padding: 40px 0;
 }
 
 .header {
@@ -92,6 +98,7 @@ footer {
 }
 
 .sidekick-app {
+	display: block;
 	left: 50%;
 	margin-left: -150px;
 	position: absolute;
@@ -99,6 +106,32 @@ footer {
 
 	@media screen and (max-width: $bp-md) {
 		position: static;
+	}
+}
+
+.app-platforms {
+	padding: 10px;
+	border: 1px solid;
+	padding-top: 0;
+	border-radius: 0.5em;
+	bottom: 20px;
+	color: desaturate(darken($slate-blue, 40%), 5%);
+	opacity: 0.5;
+	left: 50%;
+	margin-left: -125px;
+	position: absolute;
+	text-align: center;
+	width: 250px;
+
+	h4 {
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: lowercase;
+	}
+
+	span {
+		font-size: 30px;
+		padding: 0 5px;
 	}
 }
 

@@ -37,7 +37,7 @@
 
 				</div>
 
-				<div class="col-xs-12 col-md-6">
+				<div class="sidekick-app-container col-xs-12 col-md-6">
 
 					<img class="sidekick-app" src="images/sidekick-screenshot.png" alt="">
 
@@ -53,13 +53,26 @@
 
 				<div class="row">
 
-					<div class="col-md-6">
+					<div class="equal-height col-md-6">
 
 						<p class="h3 description description-top">We are <strong>strong, independent women</strong>. We should be able to feel safe on a morning run by ourselves or a solo adventure in a new city. We shouldn't have to face barriers, like street harassment, to traveling or walking home alone.</p>
 
 						<p class="h3 description">
 							<strong class="highlight">Street Sidekick</strong> is here to <strong>empower</strong> and <strong>keep you safe</strong>, so you don't have to miss all the <strong>fun</strong>. From outside the bar to your friends' downtown loft, to the pizza place around the corner, and to your doorstep, <strong>we are with you all the way</strong>.
 						</p>
+
+					</div>
+
+					<div class="equal-height col-md-6">
+
+						<div class="app-platforms">
+
+							<h4>Coming Soon to</h4>
+
+							<span class="icon-apple"></span>
+							<span class="icon-android"></span>
+
+						</div>
 
 					</div>
 
@@ -170,11 +183,20 @@
 
 		<footer>
 			<div class="container">
-				Copyright &copy; 2015 StreetSidekick
+				Copyright &copy; 2015 Street Sidekick
 			</div>
 		</footer>
 
 	</main>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/grids.min.js"></script>
+
+	<script>
+		$(document).on('ready', function () {
+			$('.equal-height').equalHeight();
+		});
+	</script>
 
 </body>
 </html>

@@ -4,8 +4,8 @@
 */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-e5mgs2");
-  src: url("../fonts/icomoon.eot?#iefix-e5mgs2") format("embedded-opentype"), url("../fonts/icomoon.ttf?-e5mgs2") format("truetype"), url("../fonts/icomoon.woff?-e5mgs2") format("woff"), url("../fonts/icomoon.svg?-e5mgs2#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?wvm608");
+  src: url("../fonts/icomoon.eot?#iefixwvm608") format("embedded-opentype"), url("../fonts/icomoon.ttf?wvm608") format("truetype"), url("../fonts/icomoon.woff?wvm608") format("woff"), url("../fonts/icomoon.svg?wvm608#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -26,10 +26,20 @@
 .icon-twitter:before {
   content: "\ea91"; }
 
+.icon-apple:before {
+  content: "\eabf"; }
+
+.icon-android:before {
+  content: "\eac1"; }
+
 .highlight {
   background-color: #fff;
   color: #f53d3d;
   padding: 5px; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: baseline; }
 
 .social {
   font-size: 25px;
@@ -77,7 +87,8 @@ footer {
 
 .description-container {
   background-color: #bbc8e2;
-  padding: 40px 0 60px; }
+  height: 100%;
+  padding: 40px 0; }
 
 .header {
   background-color: #fff;
@@ -89,6 +100,7 @@ footer {
   padding-bottom: 10px; }
 
 .sidekick-app {
+  display: block;
   left: 50%;
   margin-left: -150px;
   position: absolute;
@@ -96,6 +108,27 @@ footer {
   @media screen and (max-width: 767px) {
     .sidekick-app {
       position: static; } }
+
+.app-platforms {
+  padding: 10px;
+  border: 1px solid;
+  padding-top: 0;
+  border-radius: 0.5em;
+  bottom: 20px;
+  color: #445c8d;
+  opacity: 0.5;
+  left: 50%;
+  margin-left: -125px;
+  position: absolute;
+  text-align: center;
+  width: 250px; }
+  .app-platforms h4 {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: lowercase; }
+  .app-platforms span {
+    font-size: 30px;
+    padding: 0 5px; }
 
 section {
   padding-bottom: 60px;
