@@ -12,10 +12,22 @@ $logo-color: desaturate(#ff3333, 10%);
 
 $font-size-heading: 34px;
 
+a {
+	color: desaturate(darken(#84adff, 25%), 30%);
+
+	&:hover{
+		color: desaturate(darken(#84adff, 25%), 30%);
+	}
+}
+
 .highlight {
 	background-color: #fff;
 	color: $logo-color;
 	padding: 5px;
+}
+
+.emphasize {
+	padding-top: 20px;
 }
 
 .table-cell {

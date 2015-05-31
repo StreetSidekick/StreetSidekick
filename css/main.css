@@ -32,10 +32,18 @@
 .icon-android:before {
   content: "\eac1"; }
 
+a {
+  color: #2a65d9; }
+  a:hover {
+    color: #2a65d9; }
+
 .highlight {
   background-color: #fff;
   color: #f53d3d;
   padding: 5px; }
+
+.emphasize {
+  padding-top: 20px; }
 
 .table-cell {
   display: table-cell;
