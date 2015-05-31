@@ -209,7 +209,9 @@ section {
       height: 200px; } }
   @media screen and (max-width: 767px) {
     .img-circle {
-      margin: 0 auto; } }
+      height: 275px;
+      margin: 0 auto;
+      width: 275px; } }
 
 h4 {
   font-weight: 600; }
