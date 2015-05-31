@@ -75,9 +75,26 @@ section {
 .pin-icon {
   width: 300px; }
 
+.feature {
+  padding: 0 25px; }
+
+.img-circle {
+  background-color: #fff;
+  height: 275px;
+  margin-bottom: 30px;
+  overflow: hidden; }
+
+h4 {
+  font-weight: 600; }
+
 .about-street-sidekick {
   background-color: #efefef; }
   .about-street-sidekick h2 {
     font-size: 34px; }
+
+.feature-screenshot {
+  position: relative;
+  top: -130px;
+  width: 300px; }
 
 /*# sourceMappingURL=main.css.map */
