@@ -50,6 +50,11 @@ a {
 		&:hover {
 			color: lighten(#333, 10%);
 		}
+
+		@media screen and (max-width: $bp-sm) {
+			position: relative;
+			top: 20px;
+		}
 	}
 }
 
