@@ -22,16 +22,37 @@ body {
 	width: 332px;
 }
 
+.description {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8em;
+	margin-left: 66px;
+}
+
+.description strong {
+	display: block;
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+.description-container {
+	background-color: #efefef;
+	padding: 60px 0 120px;
+}
+
 .header {
 	background-color: #fff;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.header-top {
+	padding-bottom: 30px;
 }
 
 .sidekick-app {
+	position: absolute;
 	width: 300px;
-}
-
-.jumbotron {
-	margin-bottom: 0;
 }
 
 section {
@@ -46,6 +67,8 @@ section h2 {
 	text-transform: lowercase;
 }
 
+/* FIRST SECTION ------------------------------------------------------- */
+
 .problem-section {
-	background-color: #efefef;
+	background-color: #fff;
 }
